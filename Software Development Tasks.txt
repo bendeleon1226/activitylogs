@@ -1,0 +1,22 @@
+To Dos:
+- Setup Spring
+- Create sample Spring MVC Web Application
+
+
+Book Reading:
+Java Web Services Up and Running
+Resume on page: 9
+
+
+
+Done:
+- [22-May-2016] Setup Github
+- [21-May-2016] Setup Tomcat
+  - steps here: https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html
+
+
+
+
+
+
+

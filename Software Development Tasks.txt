@@ -11,6 +11,8 @@ Reference:
 - integrating eclipse with GIT via https sample: https://github.com/bendeleon1226/springproject.git
 
 Done:
+- [24-May-2016] Create Spring application example using prototype scope
+- [24-May-2016] Create Spring application example using singleton scope
 - [23-May-2016] Integrate Eclipse with GIT
 - [23-May-2016] Integrate Eclipse with Spring
 - [23-May-2016] Create HelloWorld using Spring

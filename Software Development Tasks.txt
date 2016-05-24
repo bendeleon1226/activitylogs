@@ -1,5 +1,5 @@
 To Dos:
-- Learn Spring from here: http://www.tutorialspoint.com/spring/spring_ioc_containers.htm
+- Learn Spring from here: http://www.tutorialspoint.com/spring/spring_bean_post_processors.htm
 - Create sample Spring MVC Web Application
 
 
@@ -10,7 +10,21 @@ Resume on page: 9
 Reference:
 - integrating eclipse with GIT via https sample: https://github.com/bendeleon1226/springproject.git
 
+
+CV Skills:
+1. Spring (Personal Java projects: https://github.com/bendeleon1226/springproject.git)
+2. Web Services (Personal Java projects: https://github.com/bendeleon1226/webservices.git)
+3. Repositories: GIT, SVN, WinCVS, CVS, Tortoise, StarTeam, IBM ClearQuest/ClearCase, Synergy, Perforce
+
+Certifications:
+1. Oracle Certified Professional Java SE 6 Programmer
+2. Oracle Certified Professional Java EE 5 Web Component Developer
+
+
 Done:
+- [24-May-2016] Create my first web service program
+- [24-May-2016] Create GIT repository for web services programs
+- [24-May-2016] Create Spring application example using callback methods (init and destroy)
 - [24-May-2016] Create Spring application example using prototype scope
 - [24-May-2016] Create Spring application example using singleton scope
 - [23-May-2016] Integrate Eclipse with GIT
@@ -19,10 +33,3 @@ Done:
 - [22-May-2016] Setup Spring
 - [22-May-2016] Setup Github
 - [21-May-2016] Setup Tomcat
-
-
-
-
-
-
-

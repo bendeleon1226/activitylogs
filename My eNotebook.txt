@@ -1,0 +1,107 @@
+********************************
+How to setup wildfly:
+https://wwu-pi.github.io/tutorials/lectures/eai/010_tutorial_jboss_setup.html
+
+********************************
+Login/logout using struts 2:
+http://www.javatpoint.com/struts-2-login-and-logout-example
+
+
+********************************
+Oracle XE credentials:
+localhost
+system/Y1tchak
+
+jbossben/Y1tchak
+********************************
+How to change wildfly port number:
+
+In your standalone.xml file, look for this element:
+<socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
+The port-offset attribute lets you modify all the ports wildfly uses, by adding the number you specify.
+
+For example, the default value is 0, which means that http port will be 8080, remoting 4447, etc.
+If you use "${jboss.socket.binding.port-offset:100}", http port will be 8180 (8080+100), remoting 4547 (4447+100), etc..
+
+So you need to change the offset, nothing else..
+
+********************************
+Start/Stop Wildfly App Server
+
+C:\wildfly-9.0.2.Final\bin\standalone.bat
+
+Close the command prompt to stop
+
+********************************
+Deploy ear or war file here:
+C:\wildfly-9.0.2.Final\standalone\deployments
+
+
+********************************
+
+Wildfly current port: 8180
+http://localhost:8180
+
+********************************
+Admin User in Wildfly http://localhost:8180 
+wildflyben/novnov2015
+
+
+*********************************
+How To Create Oracle User:
+
+create user chris identified by Y1tchak;
+grant CREATE SESSION, ALTER SESSION, CREATE DATABASE LINK, CREATE MATERIALIZED VIEW, CREATE PROCEDURE, CREATE PUBLIC SYNONYM, CREATE ROLE, CREATE SEQUENCE, CREATE SYNONYM, CREATE TABLE, CREATE TRIGGER, CREATE TYPE, CREATE VIEW, UNLIMITED TABLESPACE to jbossben;
+*********************************
+Oracle XE connection details:
+host: localhost
+port: 1521
+SID: xe
+  
+*********************************
+Installing Oracle JDBC-Driver On Wildfly / JBoss
+
+    Download the driver: ojdbc[VERSION].jar
+    Create subfolders [WILDFLY_HOME]/modules/system/layers/base/com/oracle/main/
+    Copy the downloaded ojdbc[VERSION].jar into the freshly created folder
+    Create a file module.xml, in the same folder as above, with the contents:
+
+
+    <module xmlns="urn:jboss:module:1.1" name="com.oracle">
+      <resources>
+        <resource-root path="ojdbc[VERSION].jar"/>
+      </resources>
+      <dependencies>
+        <module name="javax.api"/>
+        <module name="javax.transaction.api"/>
+      </dependencies>
+    </module>
+
+    In the configuration file standalone.xml add the entry:
+
+
+    <driver name="oracle" module="com.oracle">
+     <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+    </driver>
+
+    within the <drivers> tag.
+    Add a datasource definition within the <datasources> tag (next to ExampleDS):
+
+
+    <datasource jndi-name="java:/[NAME]" pool-name="OracleDS" enabled="true">
+     <connection-url>jdbc:oracle:thin:@[HOST_NAME]:1521:[SID]</connection-url>
+      <driver>oracle[has to match the driver name]</driver>
+      <pool>
+       <min-pool-size>1</min-pool-size>
+       <max-pool-size>5</max-pool-size>
+       <prefill>true</prefill>
+      </pool>
+      <security>
+       <user-name>[USER]</user-name>
+       <password>[PWD]</password>
+      </security>
+    </datasource>
+
+
+
+

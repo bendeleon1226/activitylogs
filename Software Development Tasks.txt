@@ -1,6 +1,7 @@
 To Dos:
 - Learn Spring from here: http://www.tutorialspoint.com/spring/spring_bean_post_processors.htm
 - Create sample Spring MVC Web Application
+- Setup Oracle XE in my Dell laptop
 - Learn how to deploy war file in Wildfly (find a sample war file from the web)
 - Learn how to deploy ear file in Wildfly (find a sample ear file fromm the web)
 - Setup Struts

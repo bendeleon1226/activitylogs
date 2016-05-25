@@ -16,7 +16,7 @@ To Dos:
 
 Book Reading:
 Java Web Services Up and Running
-Resume on page: 9
+Resume on page: 31 of 318
 
 Reference:
 - integrating eclipse with GIT via https sample: https://github.com/bendeleon1226/springproject.git

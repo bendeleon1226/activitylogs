@@ -1,5 +1,6 @@
 To Dos:
 - Learn Spring from here: http://www.tutorialspoint.com/spring/spring_bean_post_processors.htm
+- Learn HTML5 here: http://www.w3schools.com/html/html5_intro.asp
 - Create sample Spring MVC Web Application
 - Setup Oracle XE in my Dell laptop
 - Learn how to deploy war file in Wildfly (find a sample war file from the web)
@@ -16,7 +17,17 @@ To Dos:
 
 Book Reading:
 Java Web Services Up and Running
-Resume on page: 31 of 318
+Resume on page: 45 of 318
+
+Things to Learn:
+- Web Services
+- EJB
+- Spring framework
+- Hibernate
+- ActiveMQ
+- JUnit
+- Mockito
+- Struts
 
 Reference:
 - integrating eclipse with GIT via https sample: https://github.com/bendeleon1226/springproject.git
@@ -33,6 +44,7 @@ Certifications:
 
 
 Done:
+- [28-May-2016] Download JBoss 6
 - [24-May-2016] Create my first web service program
 - [24-May-2016] Create GIT repository for web services programs
 - [24-May-2016] Create Spring application example using callback methods (init and destroy)

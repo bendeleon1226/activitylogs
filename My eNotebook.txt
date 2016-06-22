@@ -50,7 +50,7 @@ wildflyben/novnov2015
 *********************************
 How To Create Oracle User:
 
-create user chris identified by Y1tchak;
+create user jbossben identified by Y1tchak;
 grant CREATE SESSION, ALTER SESSION, CREATE DATABASE LINK, CREATE MATERIALIZED VIEW, CREATE PROCEDURE, CREATE PUBLIC SYNONYM, CREATE ROLE, CREATE SEQUENCE, CREATE SYNONYM, CREATE TABLE, CREATE TRIGGER, CREATE TYPE, CREATE VIEW, UNLIMITED TABLESPACE to jbossben;
 *********************************
 Oracle XE connection details:

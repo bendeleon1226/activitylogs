@@ -1,0 +1,31 @@
+Drop Downs
+
+VERSION: NIV (select version_id, version_name from book_version)
+
+BOOK: JOHN (select book_list_id, book_name, chapter_start, chapter_end from book_list)
+
+CHAPTER: 21 same query as BOOK
+
+VERSE START: SELECT book_chapter_id, verse_start, verse_end FROM book_chapter WHERE book_list_id = ? AND chapter_number = ?
+
+VERSE END: same query as VERSE START
+
+MESSSAGE: 
+
+select verse_id, verse_number, verse_message 
+FROM book_verse 
+WHERE book_version_id = ? AND book_chapter_id = ? AND verse_number BETWEEN ? AND ? 
+order by verse_number;
+
+
+
+
+
+retrieve book name, book chapter for a given chapter id:
+
+select bl.book_name, bc.chapter_number
+from book_list bl, book_chapter bc
+WHERE bl.book_list_id = bc.book_list_id
+AND bc.chapter_id = ?
+
+
